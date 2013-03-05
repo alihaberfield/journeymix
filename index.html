@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JourneyMix 1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/font-awesome-ie7.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/journeymix.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+
+    <!-- Part 1: Wrap all page content here -->
+  <div id="wrap">
+  <div class="banner-wrap">
+  <div class="hero-unit masterhead"> 
+  <div class="container">
+  
+    <h1 class="centered">Journey Mix</h1> <h2 class="centered">Download long music mixes, take them with you</h2>
+
+  <div class="well">
+  <div class="accordion" id="accordion1">
+  <div class="accordion-group">
+  <div class="accordion-heading">
+            <a class="accordion-toggle" id="SimpleSearchToggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+       <i class="icon-search"></i> Simple search <i class="icon-caret-down"></i> 
+      </a>
+            <a class="accordion-toggle" id="AdvancedSearchToggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+       <i class="icon-cog"></i> Advanced search <i class="icon-caret-down"></i> 
+      </a>
+  </div>
+    <div id="collapseOne" class="accordion-body collapse in">
+    <div class="accordion-inner">
+
+    
+      <p class="centered">I like <select id="choose">
+      <option value="house">House</option>
+      <option value="punk">Punk</option>
+      <option value="techno">Techno</option>
+      <option value="rock">Rock</option>
+      <option value="chill">Chill</option>
+      </select> music.      I am <select id="activity">
+      <option value="running">going running</option>
+      <option value="walking">going for a walk</option>
+      <option value="cycling">cycling</option>
+      <option value="workout">working out</option>
+      <option value="cooking">cooking</option>
+      <option value="bath">taking a bath</option>
+      </select> for <input type="number" id="input_length" placeholder="45" value="45"> minutes.
+      </p>
+      <p class="centered">
+      <button class="btn btn-success btn-large" type="button" id="showTracks"><i class="icon-music"> </i> Mix my journey</button>
+    </p>
+    
+      </div>
+    </div>
+  </div>
+    
+  <div class="accordion-group">
+    <div id="collapseTwo" class="accordion-body collapse">
+    <div class="accordion-inner">
+      
+
+      <p>Search for any genre: <input type="text" id="free-genre" placeholder="Heavy metal" value="Heavy metal"> </p>
+      <p>Length from <input type="number" id="adv-length-min" placeholder="45" value="45"> to <input type="number" id="adv-length-max" placeholder="300" value="300"> minutes</p>
+      <p>Search for keyword <input type="text" id="keyword" placeholder="keyword"> </p>
+      <p>Search for bpm from: <input type="number" id="bpm-min" placeholder="0" value="0"> to: <input type="number" id="bpm-max" placeholder="300" value="300"></p>
+      <p class="centered">
+        <button class="btn btn-success btn-large" type="button" id="advancedShowTracks"><i class="icon-music"></i> Show me tracks</button>
+      </p>
+      </div> <!-- end well -->
+      </div><!-- end accordion-inner -->
+    </div><!-- end accordion-group -->
+  </div><!-- end accordion-group -->
+</div> <!-- end accordion -->
+
+
+</div>
+</div> <!-- end hero -->
+</div> <!--end banner-wrap -->
+
+<div class="social-media">
+  <div class="container">
+    <ul>
+      <li>Follow us on Twitter: <li> <a href="http://twitter.com/alihaberfield">@alihaberfield</a> </li> <li><a href="http://twitter.com/ilonaryv">@ilonaryv</a></li><li> <a href="http://www.twitter.com/sulagarcia">@sulagarcia</a></li></li>
+      <li>Fork us on GitHub</li>
+      <li>Share JourneyMix: </li>
+  </div>
+</div>
+
+<div class="container">
+
+
+<p id="searchEcho"></p>
+
+
+<div id="list_tracks">
+
+</div>
+<div id="iframe_div" class="hide">
+  <iframe id="sc-widget" width="100%" height="166" scrolling="no" frameborder="no" src=""></iframe>    
+</div> <!-- end iframe_div -->
+
+<div class="row explain">
+        <div class="span4">
+          <p class="pull-quote"><i class="icon-quote-left"></i>The journey is long.<br/>Take the music with you.<i class="icon-quote-right"></i></p>
+        </div>
+        <div class="span8">
+          <p>Journey Mix finds long music mixes on SoundCloud that you can take with you when you go running, cycling, walking or anything else you need a soundtrack for. We look through SoundCloud's huge library of Creative Commons-licensed, downloadable tracks from talented artists to find the perfect soundtracks to your journeys.</p>
+           <p>Journey Mix is powered by <a href="http://www.soundcloud.com">SoundCloud</a>.</p>
+       </div>
+          
+         
+                  
+      </div>
+
+</div> <!-- end container -->
+
+      <div id="push"></div>
+    </div> <!-- end wrap -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="span8">
+        <p>Journey Mix 1.0 is a product of the inaugural <a href="#">Berlin Geekettes</a> all-woman Hackathon, March 2013.</p> <p>Built with sweat and joy by Ali (<a href="http://twitter.com/alihaberfield">@alihaberfield</a>), Ilona (<a href="http://twitter.com/ilonaryv">@ilonaryv</a>) and Sulamita (<a href="http://www.twitter.com/sulagarcia">@sulagarcia</a>).</p>
+      </div>
+      <div class="span4">
+            <a href="http://www.soundcloud.com"><img src="assets/img/soundcloud.png"></a>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/journeymix.js"></script>
+
+  </body>
+</html>

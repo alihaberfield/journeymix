@@ -1,0 +1,240 @@
+body {
+padding-top: 0;
+}
+
+.centered {
+text-align: center;
+}
+
+
+.accordion-group {
+border: none;
+}
+
+.accordion {
+margin-bottom:0;
+}
+
+.pull-quote .icon-quote-left {
+font-size: 0.9em;
+padding-right: 10px;
+}
+
+.pull-quote .icon-quote-right {
+font-size: 0.9em;
+padding-left: 10px;
+}
+
+.explain {
+padding-top:20px;
+font-size: 18px;
+line-height: 25px;
+}
+
+p.pull-quote {
+font-size: 2em;
+line-height: 1em;
+font-weight: 200;
+}
+
+.banner-wrap {
+background: -webkit-linear-gradient(45deg, #92d245 0%,#ECFCD9 100%);
+}
+
+.hero-unit {
+background: url("../img/large-trans-opacity-20.png") no-repeat center center;
+background-size: cover;
+position:relative;
+}
+
+.accordion-inner {
+border-top: none;
+}
+
+.hide {
+display: none !important;
+}
+
+.hero-unit.masterhead {
+padding: 60px 60px 10px;
+}
+
+.well {
+border: 1px solid #7da948;
+background: #ECFCD9;
+}
+
+.accordion-heading .accordion-toggle {
+padding: 8px 15px;
+display: inline;
+}
+
+.accordion-heading {
+border-bottom: 1px solid #d5f3b1;
+padding-bottom: 9px;
+}
+
+.accordion-inner {
+padding: 25px 15px 0;
+}
+
+#showTracks {
+margin: 20px 0 0;
+}
+
+.hero-unit {margin-bottom: 0;}
+
+.hero-unit h1 {
+font-size: 70px;
+line-height: 1.1;
+letter-spacing: -2px;
+font-weight: 600;
+}
+
+.hero-unit h2 {
+margin-bottom: 20px;
+font-size: 50px;
+line-height: 1;
+letter-spacing: -1px;
+font-weight: 200;
+}
+
+.social-media {
+	background-color: #f5f5f5;
+	border-bottom:1px solid #e5e5e5;
+	font-size: 0.9em;
+	color:#;
+}
+
+.social-media li {
+float: left;
+padding-right: 20px;
+}
+
+.social-media ul {
+list-style: none;
+float: left;
+margin: 3px 0;
+}
+
+#list_tracks h3 {
+font-weight: 200;
+font-size: 22px;
+}
+
+
+#searchEcho {
+font-size: 31.5px;
+line-height: 40px;
+font-weight: 200;
+}
+
+#list_tracks li, #iframe_div li {
+background: #ecf5db;
+padding: 15px;
+border: 1px solid #84c13f;
+list-style: none;
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+}
+
+input[type="number"] {
+width: 4em;
+}
+
+#collapseOne {
+font-size: 2em;
+}
+
+#collapseTwo p {
+padding: 6px 0;
+font-size: 1.5em;
+}
+
+#searchEcho p {
+padding: 0 0 10px;
+}
+
+
+
+#iframe_div li {margin: 20px;}
+
+#list_tracks li:hover, #iframe_div li:hover {
+	border:1px solid #82E314;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+
+ /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+
+@media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+@media (max-width: 767px) {
+	.hero-unit.masterhead {
+		padding: 30px 20px 10px;
+		margin: 0 -20px 25px;
+	}
+
+	.banner-wrap, .social-media {
+		margin: 0 -20px;
+	}
+
+	#searchEcho {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		font-weight: 200;
+	}
+}
+
+@media (max-width: 979px) {
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}
+
+	.hero-unit h1 {
+		font-size: 50px;
+	}
+
+	.hero-unit h2 {
+		font-size: 35px;
+	}
+
+	#collapseOne, #collapseTwo p {
+		font-size: 1em !important;
+	}
+	
+}
